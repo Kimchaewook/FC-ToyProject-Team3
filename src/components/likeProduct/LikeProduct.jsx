@@ -3,7 +3,6 @@ import * as S from './LikeProductStyle'
 import { useWishListQuery, useGetUserDataQuery, useWishListAllDeleteMutation } from '../../api/useApi'
 import ProductItem from '../../common/ProductItem/ProductItem'
 import { useCookies } from 'react-cookie'
-import Button from 'react-bootstrap/Button'
 
 function LikeProduct() {
   const [cookies] = useCookies()
@@ -31,7 +30,7 @@ function LikeProduct() {
                 variant="outline-primary"
                 size="sm"
                 onClick={() => {
-                  cancelAllCart(token)
+                  allDeleteList(token)
                 }}
               >
                 전체삭제
