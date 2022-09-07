@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import * as S from './LikeProductStyle'
 import { useWishListQuery, useGetUserDataQuery, useWishListAllDeleteMutation } from '../../api/useApi'
 import ProductItem from '../../common/ProductItem/ProductItem'
-import { useCookies } from 'react-cookie'
+import { useCookies } from 'react-cookie';
+import Button from 'react-bootstrap/Button';
 
 function LikeProduct() {
   const [cookies] = useCookies()
